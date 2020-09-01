@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import styled from 'styled-components';
 
 const Navbar = () => {
@@ -7,29 +9,24 @@ const Navbar = () => {
       <div>
         <Nav>
           <div className="logo">
-            <a href="index.html">
+            <Link to="/">
               <i className="fas fa-user-astronaut fa-3x"></i>
               <h1>
                 <p>Hank Kim</p>
                 <span>Full Stack Developer</span>
               </h1>
-            </a>
+            </Link>
           </div>
           <ul>
             <li>
-              <a className="current" href="index.html">
-                Home
-              </a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="about.html">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="work.html">project</a>
+              <Link to="/project">project</Link>
             </li>
-            {/* <li>
-              <a href="contact.html">Contact</a>
-            </li> */}
           </ul>
         </Nav>
       </div>
