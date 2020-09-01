@@ -5,16 +5,16 @@ const Sidebar = () => {
   return (
     <SideMenu>
       <div id="linkedin">
-        LINKED IN <i class="fab fa-linkedin"></i>
+        LINKED IN <i className="fab fa-linkedin"></i>
       </div>
       <div id="github">
-        GITHUB<i class="fab fa-github"></i>
+        GITHUB<i className="fab fa-github"></i>
       </div>
       <div id="resume">
-        RESUME<i class="fas fa-file-alt"></i>
+        RESUME<i className="fas fa-file-alt"></i>
       </div>
       <div id="email">
-        CONTACT<i class="fas fa-envelope"></i>
+        CONTACT<i className="fas fa-envelope"></i>
       </div>
     </SideMenu>
   );

@@ -1,28 +1,3 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Styled from 'styled-components';
-
-const Landing = () => {
-  return (
-    <Content>
-      <h1>
-        I am Hank Kim the
-        <br />
-        <span
-          className="txt-type"
-          data-wait="1000"
-          data-words='["Full Stack Developer.","Programming Tutor.","E-Commerce Savvy.","POS System expert."]'
-        ></span>
-        <br />
-      </h1>
-
-      <Link to="/project">
-        <button className="btn-light">View Projects</button>
-      </Link>
-    </Content>
-  );
-};
-
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;
@@ -88,25 +63,3 @@ function init() {
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
-
-const Content = Styled.div`
-  color: white;
-  text-align : center;
-  padding-top :15%;
-  font-size: 2rem;
-  .btn-light {
-      margin: 2rem;
-      font-size: 15px;
-      border-radius : 2px;
-      background:#57b228;
-      color: white;
-
-      &:hover {
-        transform:scale(1.2);
-        letter-spacing : 2px;
-      }
-    }
-  }
-`;
-
-export default Landing;
