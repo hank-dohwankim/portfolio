@@ -6,16 +6,19 @@ const Landing = () => {
   return (
     <Content>
       <h1>
-        I am Hank Kim the
-        <br />
+        I Am <abbr>&#123;</abbr> HANK KIM <abbr>&#125;</abbr> The
+      </h1>
+      <br />
+      <br />
+      <h2>
         <span
           className="txt-type"
           data-wait="1000"
-          data-words='["Full Stack Developer.","Programming Tutor.","E-Commerce Savvy.","POS System expert."]'
+          data-words='["Full Stack Developer","Programming Tutor","E-Commerce Savvy","POS System expert"]'
         ></span>
         <br />
-      </h1>
-
+      </h2>
+      <br />
       <Link to="/project">
         <button className="btn-light">View Projects</button>
       </Link>
@@ -92,18 +95,30 @@ function init() {
 const Content = Styled.div`
   color: white;
   text-align : center;
-  padding-top :15%;
+  padding-top :10%;
   font-size: 2rem;
+
+  abbr {
+    color:#50bcdf;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 { font-size : 4.5rem;}
+
   .btn-light {
-      margin: 2rem;
-      font-size: 15px;
+      margin: 3rem;
+      font-size: 1.5rem;
       border-radius : 2px;
       background:#57b228;
       color: white;
 
       &:hover {
-        transform:scale(1.2);
         letter-spacing : 2px;
+        transform:scale(1.2);
+        filter: brightness(120%);
       }
     }
   }
