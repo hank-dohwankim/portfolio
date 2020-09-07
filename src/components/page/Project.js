@@ -118,6 +118,58 @@ const Project = () => {
             </div>
           </div>
         </div>
+        <div className="column">
+          <div className="card">
+            <div className="card-header">
+              <h2>Sample</h2>
+            </div>
+            <br></br>
+            <hr />
+            <div className="content">
+              <p className="content-title">
+                <h3>Skills</h3>
+              </p>
+              <div className="label-group">
+                <p>React</p>
+                <p>CSS</p>
+                <p>HTML</p>
+                <p>AWS</p>
+                <p>EC2</p>
+              </div>
+              <br></br>
+              <br></br>
+              <hr></hr>
+              <p className="content-title">
+                <h3>About</h3>
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                reiciendis animi beatae commodi sit quia consectetur odio
+                voluptate magnam laudantium. Adipisci, consectetur? Deserunt,
+                sed? Maiores deleniti saepe magnam quo vero!
+              </p>
+            </div>
+
+            <div className="btn-group">
+              <span className="btn-card">
+                <a
+                  href="http://youflix2.s3-website.ca-central-1.amazonaws.com/"
+                  target="_blank"
+                >
+                  <i class="fas fa-globe"></i> Demo
+                </a>
+              </span>
+              <span className="btn-card">
+                <a
+                  href="https://github.com/hank-dohwankim/YouFlix-React-AWS-EC2"
+                  target="_blank"
+                >
+                  <i className="fas fa-code"></i> Code
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </Content>
   );

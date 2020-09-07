@@ -32,11 +32,11 @@ const Navbar = () => {
                   <li onClick={() => selectMenu()}>
                     <Link to="/">H o m e</Link>
                   </li>
-                  <li onClick={() => selectMenu()}>
+                  {/* <li onClick={() => selectMenu()}>
                     <Link to="/about">
                       <span>A b o u t</span>
                     </Link>
-                  </li>
+                  </li> */}
                   <li onClick={() => selectMenu()}>
                     <Link to="/project">project</Link>
                   </li>
