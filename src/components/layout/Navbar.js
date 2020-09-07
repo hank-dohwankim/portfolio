@@ -30,11 +30,11 @@ const Navbar = () => {
               <div>
                 <ul>
                   <li onClick={() => selectMenu()}>
-                    <Link to="/">Home</Link>
+                    <Link to="/">H o m e</Link>
                   </li>
                   <li onClick={() => selectMenu()}>
                     <Link to="/about">
-                      <span>About</span>
+                      <span>A b o u t</span>
                     </Link>
                   </li>
                   <li onClick={() => selectMenu()}>
@@ -53,6 +53,11 @@ const Navbar = () => {
 const Nav = styled.nav`
   .logo {
     z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .logo:hover {
+    transform: scale(1.1);
   }
 
   display: flex;

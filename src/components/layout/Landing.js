@@ -6,9 +6,9 @@ import Styled from 'styled-components';
 const Landing = () => {
   return (
     <Content>
-      <h1>
-        I Am <abbr>&#123;</abbr> HANK KIM <abbr>&#125;</abbr> The
-      </h1>
+      <h2>
+        I <span>A</span>m <abbr>&#123;</abbr> HANK KIM <abbr>&#125;</abbr> The
+      </h2>
       <br />
       <h2>
         {' '}
@@ -38,7 +38,9 @@ const Content = Styled.div`
   padding-top :10%;
   font-size: 2rem;
 
-
+  span {
+    font-size: 3.5rem;
+  }
 
   abbr {
     color:#50bcdf;
