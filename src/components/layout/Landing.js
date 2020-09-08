@@ -1,30 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Typewriter from 'typewriter-effect';
+import TypingEffect from 'react-typewriter-effect';
 import Styled from 'styled-components';
 
 const Landing = () => {
   return (
     <Content>
-      <h2>
-        I <span>A</span>m <abbr>&#123;</abbr> HANK KIM <abbr>&#125;</abbr> The
+      <h2 className="header">
+        I Am <abbr>&#123;</abbr> HANK KIM <abbr>&#125;</abbr> The
       </h2>
       <br />
-      <h2>
-        {' '}
-        <Typewriter
-          options={{
-            strings: [
-              'Full Stack Developer',
-              'Programming Tutor',
-              'E-Commerce Savvy',
-              'POS System expert',
-            ],
-            autoStart: true,
-            loop: true,
+      <div className="typewriter">
+        <TypingEffect
+          multiText={[
+            'Full Stack Developer',
+            'E-Commerce Savvy',
+            'Programming Tutor',
+            'POS System Expert',
+            'Full Stack Developer',
+            'E-Commerce Savvy',
+            'Programming Tutor',
+            'POS System Expert',
+          ]}
+          typeSpeed={50}
+          cursorColor="#fff"
+          textStyle={{
+            color: '#fff',
           }}
+          startDelay={0}
+          multiTextDelay={2000}
+          eraseDelay={10}
         />
-      </h2>
+      </div>
       <Link to="/project">
         <button className="btn-light">View Projects</button>
       </Link>
@@ -35,7 +42,10 @@ const Landing = () => {
 const Content = Styled.div`
   color: white;
   text-align : center;
-  padding-top :10%;
+  align-items: center;
+  position:fixed;
+  top:25%;
+  left:25%;
   font-size: 2rem;
 
   span {
@@ -46,23 +56,35 @@ const Content = Styled.div`
     color:#50bcdf;
   }
 
-  h1 {
-    font-size: 5rem;
+  .header {
+    font-size: 4rem;
     @media only screen and (max-width: 900px) {
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
     @media only screen and (max-width: 520px) {
-      font-size: 1.5rem;
+      
+      font-size: 1.25rem;
     }
   }
-  h2 { 
-    font-size : 4.5rem;
+  .typewriter { 
+    .react-typewriter-text{
+      text-align:center;
+    }
+    z-index:-1;
+    display: block;
+    font-size : 2rem;
+    position:relative;
+      top:-1rem;
     @media only screen and (max-width: 900px) {
-      font-size: 2.5rem;
+      font-size: 1rem;
+      position:relative;
+      top:-1rem;
     }
     @media only screen and (max-width: 520px) {
-      font-size: 1.25rem;
+      position:relative;
+      top:-2rem;
+      font-size: 0.6rem;
     }
   }
 
@@ -82,6 +104,11 @@ const Content = Styled.div`
       @media only screen and (max-width: 700px) {
         font-size: 1rem;
       }
+      @media only screen and (max-width: 520px) {
+      position:relative;
+      font-size:0.8rem;
+      top:-2rem;
+    }
     }
   }
 `;

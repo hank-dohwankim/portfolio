@@ -49,10 +49,20 @@ const Project = () => {
 
             <div className="btn-group">
               <span className="btn-card">
-                <i class="fas fa-globe"></i> Demo
+                <a
+                  href="https://hank-dohwankim.github.io/portfolio/"
+                  target="_blank"
+                >
+                  <i class="fas fa-globe"></i> Demo
+                </a>
               </span>
               <span className="btn-card">
-                <i className="fas fa-code"></i> Code
+                <a
+                  href="https://github.com/hank-dohwankim/portfolio"
+                  target="_blank"
+                >
+                  <i class="fas fa-code"></i> Code
+                </a>
               </span>
             </div>
           </div>
@@ -198,13 +208,13 @@ const Content = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    @media only screen and (max-width: 900px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media all and (max-width: 625px) {
+    @media all and (max-width: 1200px) {
       grid-template-columns: repeat(1, 1fr);
     }
+    /* 
+    @media all and (max-width: 625px) {
+      grid-template-columns: repeat(1, 1fr);
+    } */
 
     grid-gap: 1rem;
   }
@@ -257,16 +267,16 @@ const Content = styled.div`
         margin-right: -2px;
         margin-top: 0;
 
-        /* &:hover {
+        &:hover {
           filter: brightness(120%);
-        } */
+        }
       }
     }
 
     .btn-group {
       position: absolute;
       right: 1rem;
-      top: 90%;
+      top: 91%;
     }
   }
 
@@ -296,11 +306,22 @@ const Content = styled.div`
   }
 
   /* Responsive columns - one column layout (vertical) on small screens */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 500px) {
     .column {
-      width: 100%;
+      width: 120%;
       display: block;
       margin-bottom: 20px;
+      * {
+        font-size: 95%;
+        line-height: 100%;
+      }
+      .card {
+        max-height: 500px;
+      }
+      .btn-group {
+        display: flex;
+        margin-right: -10px;
+      }
     }
   }
 `;

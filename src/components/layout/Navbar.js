@@ -11,10 +11,11 @@ const Navbar = () => {
     <div className="container">
       <Nav>
         <div className="logo">
-          <Link to="/">
+          <Link to="/portfolio">
             <i className="fas fa-user-astronaut fa-3x"></i>
             <h1>
               <p>Hank Kim</p>
+              <div className="underbar"></div>
               <label>Full Stack Developer</label>
             </h1>
           </Link>
@@ -30,7 +31,7 @@ const Navbar = () => {
               <div>
                 <ul>
                   <li onClick={() => selectMenu()}>
-                    <Link to="/">H o m e</Link>
+                    <Link to="/portfolio">H o m e</Link>
                   </li>
                   {/* <li onClick={() => selectMenu()}>
                     <Link to="/about">
@@ -54,10 +55,23 @@ const Nav = styled.nav`
   .logo {
     z-index: 1;
     transition: all 0.3s ease-in-out;
+    @media only screen and (max-width: 520px) {
+      transform: scale(0.85);
+    }
+  }
+
+  .underbar {
+    background-color: #fff;
+    height: 1.5px;
+    width: 96%;
+    position: relative;
+    top: 6px;
   }
 
   .logo:hover {
-    transform: scale(1.1);
+    @media only screen and (min-width: 900px) {
+      transform: scale(1.1);
+    }
   }
 
   display: flex;
@@ -142,6 +156,9 @@ const Nav = styled.nav`
       display: flex;
       align-items: center;
       justify-content: center;
+      @media only screen and (max-width: 520px) {
+        transform: scale(0.8);
+      }
 
       > div {
         position: relative;
