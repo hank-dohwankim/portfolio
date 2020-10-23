@@ -128,7 +128,7 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className="column">
+        {/* <div className="column">
           <div className="card">
             <div className="card-header">
               <h2>Sample</h2>
@@ -179,7 +179,7 @@ const Project = () => {
               </span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </Content>
   );

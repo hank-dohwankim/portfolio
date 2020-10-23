@@ -75,7 +75,7 @@ const Content = Styled.div`
     display: block;
     font-size : 2rem;
     position:relative;
-      top:-1rem;
+    top:-1rem;
     @media only screen and (max-width: 900px) {
       font-size: 1rem;
       position:relative;
