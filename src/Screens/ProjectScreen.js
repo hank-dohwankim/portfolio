@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Project = () => {
+const ProjectScreen = () => {
   return (
     <Content>
       <div className="row">
@@ -326,4 +326,4 @@ const Content = styled.div`
   }
 `;
 
-export default Project;
+export default ProjectScreen;

@@ -4,12 +4,11 @@ import Navbar from './components/layout/Navbar';
 import Landing from './components/layout/Landing';
 import Sidebar from './components/layout/Sidebar';
 
-import About from './components/page/About';
-import Project from './components/page/Project';
-
 import Styled from 'styled-components';
 
 import './App.css';
+import AboutScreen from './Screens/AboutScreen';
+import ProjectScreen from './Screens/ProjectScreen';
 
 const App = () => {
   return (
@@ -20,8 +19,8 @@ const App = () => {
         <Route exact path="/portfolio" component={Landing} />
         <section className="container">
           <Switch>
-            <Route exact path="/about" component={About}></Route>
-            <Route exact path="/project" component={Project}></Route>
+            <Route exact path="/about" component={AboutScreen}></Route>
+            <Route exact path="/project" component={ProjectScreen}></Route>
           </Switch>
         </section>
       </Container>
