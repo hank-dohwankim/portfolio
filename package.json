@@ -1,44 +1,34 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://hank-dohwankim.github.io/portfolio",
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
-    "react-typewriter-effect": "^1.0.2",
-    "styled-components": "^5.1.1"
-  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn build",
-    "deploy": "npm run build && gh-pages -d build"
+    "start": "node server",
+    "server": "nodemon server"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hank-dohwankim/portfolio.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "Hank Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hank-dohwankim/portfolio/issues"
+  },
+  "homepage": "https://github.com/hank-dohwankim/portfolio#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.2",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "gravatar": "^1.8.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.11",
+    "request": "^2.88.2"
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
   }
 }
