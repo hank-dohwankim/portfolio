@@ -331,3 +331,5 @@ router.get('/github/:username', async (req, res) => {
     return res.status(404).json({ msg: 'No Github profile found' });
   }
 });
+
+module.exports = router;

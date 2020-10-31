@@ -7,7 +7,6 @@ const Navbar = () => {
     document.getElementById('toggler').checked = false;
   }
 
-
   return (
     <div className="container">
       <Nav>
