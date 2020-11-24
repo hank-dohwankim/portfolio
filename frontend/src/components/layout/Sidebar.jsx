@@ -8,7 +8,7 @@ const Sidebar = () => {
         <ul className="contact-list">
           <li className="contact__item">
             <a
-              href="https://www.linkedin.com/in/hank-kim/"
+              href="https://www.linkedin.com/in/hendrik-kim-849091200/"
               target="_blank"
               className="contact-link contact-link-linkedin"
             >
@@ -19,7 +19,7 @@ const Sidebar = () => {
 
           <li className="contact__item">
             <a
-              href="https://github.com/hank-dohwankim"
+              href="https://github.com/hendrik-kim"
               target="_blank"
               className="contact-link contact-link-github"
             >
@@ -41,7 +41,7 @@ const Sidebar = () => {
 
           <li className="contact__item">
             <a
-              href="mailto:hank.dohwankim@gmail.com"
+              href="mailto:hendrik.kim.developer@gmail.com"
               target="_blank"
               className="contact-link contact-link-email"
             >

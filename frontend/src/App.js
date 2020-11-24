@@ -3,12 +3,13 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Landing from './components/layout/Landing';
 import Sidebar from './components/layout/Sidebar';
+import AboutScreen from './screens/AboutScreen';
+import ProjectScreen from './screens/ProjectScreen';
+import RegisterScreen from './screens/auth/RegisterScreen';
+import LoginScreen from './screens/auth/LoginScreen';
 
 import Styled from 'styled-components';
-
 import './App.css';
-import AboutScreen from './Screens/AboutScreen';
-import ProjectScreen from './Screens/ProjectScreen';
 
 const App = () => {
   return (
@@ -16,11 +17,13 @@ const App = () => {
       <Container>
         <Navbar />
         <Sidebar />
-        <Route exact path="/portfolio" component={Landing} />
+        <Route exact path="/" component={Landing} />
         <section className="container">
           <Switch>
             <Route exact path="/about" component={AboutScreen}></Route>
-            <Route exact path="/project" component={ProjectScreen}></Route>
+            <Route exact path="/projects" component={ProjectScreen}></Route>
+            <Route exact path="/register" component={RegisterScreen}></Route>
+            <Route exact path="/login" component={LoginScreen}></Route>
           </Switch>
         </section>
       </Container>

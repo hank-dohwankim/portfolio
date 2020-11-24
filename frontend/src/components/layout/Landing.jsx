@@ -7,7 +7,7 @@ const Landing = () => {
   return (
     <Content>
       <h2 className="header">
-        I Am <abbr>&#123;</abbr> HANK KIM <abbr>&#125;</abbr> The
+        I Am <abbr>&#123;</abbr> Hendrik <abbr>&#125;</abbr> The
       </h2>
       <br />
       <div className="typewriter">
@@ -32,7 +32,7 @@ const Landing = () => {
           eraseDelay={10}
         />
       </div>
-      <Link to="/project">
+      <Link to="/projects">
         <button className="btn-light">View Projects</button>
       </Link>
     </Content>

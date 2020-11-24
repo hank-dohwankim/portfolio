@@ -11,10 +11,10 @@ const Navbar = () => {
     <div className="container">
       <Nav>
         <div className="logo">
-          <Link to="/portfolio">
+          <Link to="/">
             <i className="fas fa-user-astronaut fa-3x"></i>
             <h1>
-              <p>Hank Kim</p>
+              <p>Hendrik</p>
               <div className="underbar"></div>
               <label>Full Stack Developer</label>
             </h1>
@@ -31,15 +31,10 @@ const Navbar = () => {
               <div>
                 <ul>
                   <li onClick={() => selectMenu()}>
-                    <Link to="/portfolio">H o m e</Link>
+                    <Link to="/">H o m e</Link>
                   </li>
-                  {/* <li onClick={() => selectMenu()}>
-                    <Link to="/about">
-                      <span>A b o u t</span>
-                    </Link>
-                  </li> */}
                   <li onClick={() => selectMenu()}>
-                    <Link to="/project">project</Link>
+                    <Link to="/projects">project</Link>
                   </li>
                 </ul>
               </div>
